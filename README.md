@@ -23,10 +23,11 @@ pip3 install -r ./requirements.txt
 
 Установить переменную среды для запуска скрипта:
 
-```linux, Mac
-export FLASK_APP=hello
 ```
-```Windows
+linux, Mac:
+export FLASK_APP=hello
+
+Windows:
 $env:FLASK_APP="main.py"
 ```
 
@@ -59,9 +60,15 @@ flask db upgrade
 flask run
 ```
 
-Веб-старницы:
+Веб-старницы
+
+Форма заполнения:
 
 ![image](https://user-images.githubusercontent.com/107006539/234625737-59fc4426-0b5b-4911-ae9d-85f5041b4c0e.png)
+
+
+Оповощение о успешной отправке:
+
 ![image](https://user-images.githubusercontent.com/107006539/234625940-671f33ab-61a2-42b5-9e4c-c5c326dfd8ae.png)
 
 
