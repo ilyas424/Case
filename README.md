@@ -1,5 +1,6 @@
 # Case
 
+Задача:
 
 ```TASK
 Необходимо написать вэб-страницу при помощи стека JS+HTML+CSS.Данная страница собирает личные данные пользователя, после чего
@@ -12,6 +13,7 @@
 сегмента с БД и вэб-страницой.
 ```
 
+Сздание окружение и установка зависимостей:
 
 ```bash
 virtualenv -p python3 venv
@@ -19,31 +21,39 @@ source venv/bin/activate
 pip3 install -r ./requirements.txt
 ```
 
+Установить переменную среды для запуска скрипта:
+
 ```linux, Mac
 export FLASK_APP=hello
 ```
-
 ```Windows
 $env:FLASK_APP="main.py"
 ```
 
-```setting.py
-create file setting.py
+Создать файл setting.py
+
+```bash
+touch setting.py
 ```
 
-```example settings.py file
+Пример заполнения файла setting.py:
+
+```
 DB_HOST = ''
 DB_NAME = ''
 DB_USER_NAME = ''
 DB_PASSWORD = ''
 ```
 
+Развернуть бд и накатить миграции:
 
 ```flask-sqlalchemy
 flask db init
 flask db migrate
-flask db migrate
+flask db upgrade
 ```
+
+Запуск приложение :
 
 ```run application
 flask run
