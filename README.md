@@ -59,9 +59,11 @@ flask db upgrade
 flask run
 ```
 
-```Example
-![image](https://user-images.githubusercontent.com/107006539/234623953-1188cf0b-6fd2-4687-b451-d44a8aa747f7.png)
-![image](https://user-images.githubusercontent.com/107006539/234624067-73f06f42-83c4-4e95-8d68-585df081ac9f.png)
+Веб-старницы:
+
+![image](https://user-images.githubusercontent.com/107006539/234625737-59fc4426-0b5b-4911-ae9d-85f5041b4c0e.png)
+![image](https://user-images.githubusercontent.com/107006539/234625940-671f33ab-61a2-42b5-9e4c-c5c326dfd8ae.png)
+
 
 
 
