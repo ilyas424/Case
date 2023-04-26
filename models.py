@@ -13,13 +13,15 @@ class User(db.Model):
     birth_date = db.Column(db.Date, nullable=False)
     place_work = db.Column(db.String(50), nullable=False)
 
+    time_id = db.Column(db.Integer, db.ForeignKey('times.id'))
+    time = db.relationship('Time')
+
     
 
 class Time(db.Model):
     __tablename__ = 'times'
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True, unique=True, nullable=False)
-    creation_date = db.Column(db.DateTime(timezone=True), server_default=func.now())
+    creation_date = db.Column(db.DateTime, server_default=func.now())
 
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    user = db.relationship('User', backref=db.backref("times", lazy=True))
+    

@@ -28,20 +28,22 @@ def register():
     if request.method == "POST":
         logger.info("POST request")
         try:
+            
+            t = Time(    
+            )
+
+            db.session.add(t)
+            db.session.flush()
+
             u = User(
                 first_name=request.form['first_name'],
                 last_name=request.form['last_name'],
                 surname=request.form['surname'],
                 birth_date=request.form['birth_date'],
-                place_work=request.form['place_work']
+                place_work=request.form['place_work'],
+                time_id=t.id
             )
             db.session.add(u)
-            db.session.flush()
-
-            t = Time(
-                user_id = u.id
-            )
-            db.session.add(t)
             db.session.commit()
             logger.info("adding user data to database")
         except:
@@ -52,6 +54,19 @@ def register():
         return render_template('Message.html')
     logger.info("GET request")
     return render_template('Forms.html')
+
+
+@app.route('/users', methods=["GET"])
+def get_users():
+    users = []
+    try:
+        users = User.query.all()
+    except:
+        logger.info("show error user data to database")
+    return render_template('ListUsers.html', list=users)
+
+
+
 
 
 
