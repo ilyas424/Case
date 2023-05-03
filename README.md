@@ -81,15 +81,15 @@ flask run
 
 Список Пользователей:
 
-![image](https://user-images.githubusercontent.com/107006539/235811171-c05ab137-1f9e-4d2b-abb4-400c13c05526.png)
+![image](https://user-images.githubusercontent.com/107006539/235811345-4537ccd1-ae31-4f2c-9802-b3565a706d2c.png)
 
 
 Форма авторизации
-![image](https://user-images.githubusercontent.com/107006539/235811117-b33e1c70-29aa-4992-ac01-c843a73b2b4f.png)
+![image](https://user-images.githubusercontent.com/107006539/235811376-0ef621fc-0fa0-4a7c-aeeb-056f975887f1.png)
 
 
 Таблица со статистикой действий:
-![image](https://user-images.githubusercontent.com/107006539/235811222-f3dc3cfd-e675-4ed8-a829-0751821c4675.png)
+![image](https://user-images.githubusercontent.com/107006539/235811288-e2d93735-4d61-4438-b07c-2f56be74d6d5.png)
 
 
 
