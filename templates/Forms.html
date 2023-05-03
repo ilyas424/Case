@@ -12,12 +12,33 @@
 <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 <style>
 
+a{
+  color: black;
+}
+a:hover{
+  color:black;
+  text-decoration: none;
+}
 .form .req:invalid {
   border: 2px solid red;
 }
 .form .req:valid {
   border: 2px solid green;
 }
+
+.btn1{
+    margin-left: 800px;
+    margin-top: 10px;
+    padding: 8px;
+    display: inline-block;
+    background: #8C959D;
+    color: #fff; 
+    padding: 10px; 
+    text-decoration: none;
+    border-radius: 10px; 
+}
+
+
 
 </style>
 </head>
@@ -26,6 +47,9 @@
     
 <div class="container">
   <main>
+    <div>
+        <a href="/auth" class="btn1">Войти</a>
+    </div>
     <div class="py-5 text-center">
       <h2>Форма</h2>
       <p class="lead">Ниже расположена форма для заполения пользовательскими данными.</p>
@@ -83,7 +107,6 @@
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">© 2023 ХНЛ</p>
-    <a href="/users">Секретная ссылка</a>
   </footer>
 </div>
 <script>
